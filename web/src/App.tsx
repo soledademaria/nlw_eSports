@@ -1,23 +1,17 @@
-interface ButtonProps {
-  title?: string
-}
+import './styles/main.css'
 
-
-function Button(props: ButtonProps) {
-  return (
-    <button>
-      {props.title}
-    </button>
-  )
-}
+import logoImg from './assets/logo.svg'
 
 function App() {
   return (
-    <div>
-      <Button title="Send 1" />
-      <Button title="Send 2" />
-      <Button title="Send 3" />
-      <Button title="Hello World" />
+    <div className='max-w-[1344px] mx-auto flex flex-col items-center my-20'>
+      <img src={logoImg}/>
+
+      <h1 className='text-6xl text-white font-black mt-20'>
+        Seu
+          <span className='bg-nlw-gradient bg-clip-text text-transparent'> duo </span>
+        está aqui
+      </h1>
     </div>
   )
 }
